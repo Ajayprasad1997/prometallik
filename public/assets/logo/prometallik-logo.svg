@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" fill="none" width="100%" height="100%">
+  <defs>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2A4A" />
+      <stop offset="60%" stop-color="#145B8C" />
+      <stop offset="100%" stop-color="#0B2A4A" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF6C23" />
+      <stop offset="100%" stop-color="#FF7A1A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Industrial Monogram Icon -->
+  <g transform="translate(10, 8)">
+    <!-- Faceted Hexagonal Ingot / Crystal Base -->
+    <polygon points="32,4 58,18 58,46 32,60 6,46 6,18" fill="url(#metalGrad)" stroke="#0B2A4A" stroke-width="2"/>
+    <!-- Precision Ingot Chamfer Facet -->
+    <polygon points="32,4 58,18 32,32 6,18" fill="#145B8C" fill-opacity="0.6"/>
+    <!-- Orange Core "P" Geometric Accent -->
+    <path d="M22 18 H36 C42 18 46 22 46 27 C46 32 42 36 36 36 H28 V46 H22 Z M28 24 V30 H35 C37.5 30 39.5 28.5 39.5 27 C39.5 25.5 37.5 24 35 24 Z" fill="url(#orangeGrad)"/>
+    <!-- Precision Corner Accent -->
+    <circle cx="58" cy="18" r="2.5" fill="#EF6C23" />
+    <circle cx="32" cy="60" r="2" fill="#F5B400" />
+  </g>
+
+  <!-- Typography: PROMETALLIK -->
+  <g transform="translate(86, 44)">
+    <text font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="0.04em" fill="#0B2A4A">
+      PROMETALLIK
+    </text>
+    <!-- Dot in Orange -->
+    <circle cx="218" cy="-5" r="4" fill="#EF6C23" />
+  </g>
+
+  <!-- Subtitle Tagline -->
+  <g transform="translate(88, 62)">
+    <text font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="8.5" letter-spacing="0.28em" fill="#145B8C" text-transform="uppercase">
+      ADVANCED METALS &amp; MATERIALS
+    </text>
+  </g>
+</svg>
