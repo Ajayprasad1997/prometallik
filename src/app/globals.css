@@ -159,3 +159,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .nextjs-toast{
   display: none !important;
 }
+
+.p_t_35{
+  padding-top: 35px;
+}
+.p_t_55{
+  padding-top: 120px;
+}

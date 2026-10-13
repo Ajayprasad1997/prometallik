@@ -28,7 +28,7 @@ export default function ProductDetailClient({
   const { openRfqModal, openDocModal } = useModal();
 
   return (
-    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111] pt-28">
+    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111]">
       {/* Breadcrumb Header Strip */}
       <div className="py-4 bg-white border-b border-[#D5DAE0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2 text-xs font-mono-tech text-[#596573]">

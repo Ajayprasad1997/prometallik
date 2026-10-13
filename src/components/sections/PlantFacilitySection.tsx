@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteContent } from "@/data/siteContent";
 import { contactData } from "@/data/contact";
+import ContactSectionWithMap from "@/components/sections/ContactSectionWithMap";
 import { MapPin, Phone, Mail, Clock, ExternalLink, Factory, Activity, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -43,27 +44,27 @@ export default function PlantFacilitySection() {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#0B2A4A] mb-3">
+          <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#0B2A4A] mb-3" data-aos="fade-up">
             <span className="w-5 h-[2px] bg-[#EF6C23]" />
             <span>INFRASTRUCTURE &amp; CAPABILITY</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-heading font-black tracking-tight text-[#0B2A4A] leading-[1.05]">
+          <h2 className="text-3xl sm:text-5xl font-heading font-black tracking-tight text-[#0B2A4A] leading-[1.05]" data-aos="fade-up">
             {siteContent.plantFacility.headline}
           </h2>
-          <p className="mt-4 text-sm sm:text-base text-[#596573] font-sans">
+          <p className="mt-4 text-sm sm:text-base text-[#596573] font-sans" data-aos="fade-up">
             {siteContent.plantFacility.description}
           </p>
         </div>
 
         {/* Wide Image Background with Animated Technical Markers */}
-        <div className="relative w-full h-[400px] sm:h-[520px] rounded-xl overflow-hidden border border-[#D5DAE0] shadow-xl mb-12 bg-[#0B2A4A]">
+        <div className="relative w-full h-[400px] sm:h-[520px] rounded-xl overflow-hidden border border-[#D5DAE0] shadow-xl mb-12 bg-[#0B2A4A]" data-aos="fade-up">
           <Image
             src="/assets/images/plant/plant-floor.jpg"
             alt="PROMETALLIK Manufacturing Facility Interior"
             fill
             sizes="100vw"
             className="object-cover object-center filter contrast-110 brightness-95"
-          />
+          data-aos="fade-up"/>
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/90 via-[#0B2A4A]/30 to-black/40 pointer-events-none" />
 
           {/* Interactive Technical Markers */}
@@ -105,7 +106,7 @@ export default function PlantFacilitySection() {
         </div>
 
         {/* 4 Operations Highlights Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12" data-aos="fade-up">
           {plantAreas.map((area, idx) => (
             <div
               key={idx}
@@ -135,79 +136,10 @@ export default function PlantFacilitySection() {
             Placeholders for: Plant name, Street address, City, State, PIN code,
             Country, Telephone, Email, Business hours, View on Google Maps button.
             ========================================================================= */}
-        <div className="bg-[#EEF0F2] border-2 border-[#145B8C] rounded-xl p-8 sm:p-10 shadow-lg relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-blueprint-pattern opacity-30 pointer-events-none" />
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            {/* Left Column: Heading and Address Details */}
-            <div className="lg:col-span-8 space-y-4">
-              <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-wider text-[#EF6C23] font-bold">
-                <MapPin className="w-4 h-4" />
-                <span>OFFICIAL PLANT SPECIFICATION</span>
-              </div>
-
-              <h3 className="text-2xl sm:text-3xl font-heading font-black text-[#0B2A4A]">
-                {facility.name}
-              </h3>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-xs sm:text-sm text-[#2B333B]">
-                <div className="space-y-1">
-                  <span className="text-[10px] font-mono-tech uppercase tracking-wider text-[#596573] block">
-                    Plant Physical Address:
-                  </span>
-                  <p className="font-semibold text-[#111111]">{facility.streetAddress}</p>
-                  <p>{facility.city}, {facility.state}</p>
-                  <p>PIN Code: {facility.pinCode}</p>
-                  <p className="font-bold text-[#0B2A4A]">{facility.country}</p>
-                </div>
-
-                <div className="space-y-2">
-                  <div>
-                    <span className="text-[10px] font-mono-tech uppercase tracking-wider text-[#596573] block">
-                      Operations Contact:
-                    </span>
-                    <p className="flex items-center space-x-2 mt-0.5">
-                      <Phone className="w-3.5 h-3.5 text-[#EF6C23]" />
-                      <span className="font-semibold">{facility.telephone}</span>
-                    </p>
-                    <p className="flex items-center space-x-2 mt-0.5">
-                      <Mail className="w-3.5 h-3.5 text-[#EF6C23]" />
-                      <span>{facility.email}</span>
-                    </p>
-                  </div>
-
-                  <div className="pt-1">
-                    <span className="text-[10px] font-mono-tech uppercase tracking-wider text-[#596573] block">
-                      Operating Hours:
-                    </span>
-                    <p className="flex items-center space-x-2 mt-0.5 text-xs text-[#111111]">
-                      <Clock className="w-3.5 h-3.5 text-[#F5B400]" />
-                      <span>{facility.businessHours}</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Google Maps Link Button */}
-            <div className="lg:col-span-4 flex flex-col justify-center items-start lg:items-end">
-              <a
-                href={contactData.map.defaultSearchUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-[#0B2A4A] hover:bg-[#145B8C] text-white px-7 py-4 rounded font-heading font-bold text-xs uppercase tracking-wider inline-flex items-center justify-center space-x-3 transition-colors shadow-md"
-              >
-                <span>View on Google Maps</span>
-                <ExternalLink className="w-4 h-4 text-[#EF6C23]" />
-              </a>
-              <span className="text-[10px] font-mono-tech text-[#596573] mt-2">
-                Coordinates &amp; Satellite Facility View
-              </span>
-            </div>
-          </div>
-        </div>
+      
       </div>
+      <ContactSectionWithMap />
     </section>
+    
   );
 }

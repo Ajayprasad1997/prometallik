@@ -66,7 +66,7 @@ function ContactPageContent() {
   };
 
   return (
-    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111] pt-28">
+    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111]">
       {/* Contact Hero */}
       <section className="relative w-full py-20 bg-[#0B2A4A] text-white overflow-hidden border-b border-[#145B8C]">
         <div className="absolute inset-0 z-0">
@@ -81,16 +81,16 @@ function ContactPageContent() {
           <div className="absolute inset-0 bg-industrial-grid-dark opacity-20 pointer-events-none" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full p_t_35">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#F5B400] mb-4">
+            <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#F5B400] mb-4" data-aos="fade-up">
               <span className="w-6 h-[2px] bg-[#EF6C23]" />
               <span>COMMERCIAL &amp; TECHNICAL ENGAGEMENT</span>
             </div>
-            <h1 className="text-4xl sm:text-6xl font-heading font-black tracking-tight text-white leading-tight">
+            <h1 className="text-4xl sm:text-6xl font-heading font-black tracking-tight text-white leading-tight" data-aos="fade-up">
               Contact Our Metallurgical Desk
             </h1>
-            <p className="mt-6 text-base sm:text-lg text-[#B8BEC5] leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-[#B8BEC5] leading-relaxed" data-aos="fade-up">
               Whether you are preparing an RFQ for European supply, requesting testing samples, or scheduling a plant audit, our commercial and engineering teams are ready to assist.
             </p>
           </div>
@@ -99,7 +99,7 @@ function ContactPageContent() {
 
       {/* Main Quotation Form Section */}
       <section className="py-20 bg-white border-b border-[#D5DAE0]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
           <div className="bg-[#EEF0F2] rounded-xl p-8 sm:p-12 border border-[#D5DAE0] shadow-sm">
             {submitted ? (
               <div className="p-8 bg-white rounded-lg border border-emerald-500 text-center space-y-4">

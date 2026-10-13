@@ -10,7 +10,7 @@ import { Search, X, Download, FileText, CheckCircle2 } from "lucide-react";
 
 export default function ProductsPage() {
   return (
-    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111] pt-28">
+    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111]">
       {/* Product Catalog Hero */}
       <section className="relative w-full py-20 bg-[#0B2A4A] text-white overflow-hidden border-b border-[#145B8C]">
         <div className="absolute inset-0 z-0">
@@ -25,16 +25,16 @@ export default function ProductsPage() {
           <div className="absolute inset-0 bg-industrial-grid-dark opacity-20 pointer-events-none" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full p_t_35">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#F5B400] mb-4">
+            <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#F5B400] mb-4" data-aos="fade-right">
               <span className="w-6 h-[2px] bg-[#EF6C23]" />
               <span>Engineered Chemical &amp; Powder Catalogue</span>
             </div>
-            <h1 className="text-4xl sm:text-6xl font-heading font-black tracking-tight text-white leading-tight">
+            <h1 className="text-4xl sm:text-6xl font-heading font-black tracking-tight text-white leading-tight" data-aos="fade-right">
               Advanced Materials &amp; Precision Powders
             </h1>
-            <p className="mt-6 text-base sm:text-lg text-[#B8BEC5] leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-[#B8BEC5] leading-relaxed" data-aos="fade-right">
               Refractory tungsten intermediates, classified metal powders, hardmetal carbides, and chemical compounds engineered in India for high-performance industrial metallurgy.
             </p>
           </div>
@@ -48,10 +48,10 @@ export default function ProductsPage() {
       <section className="py-16 bg-white border-b border-[#D5DAE0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="text-xl font-heading font-black text-[#0B2A4A]">
+            <h3 className="text-xl font-heading font-black text-[#0B2A4A]" data-aos="fade-right">
               Need Full Chemical Assays &amp; Impurity Ceilings?
             </h3>
-            <p className="text-xs text-[#596573] mt-1 font-mono-tech">
+            <p className="text-xs text-[#596573] mt-1 font-mono-tech" data-aos="fade-left">
               Download the complete 2026/2027 Engineering Material Specifications Compendium
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function ProductsPage() {
               alert("Product Catalogue (PDF): Document will be available shortly upon client upload.");
             }}
             className="px-6 py-3 bg-[#0B2A4A] hover:bg-[#145B8C] text-white text-xs font-heading font-bold uppercase tracking-wider rounded inline-flex items-center space-x-2 transition-colors shadow-xs"
-          >
+          data-aos="fade-up">
             <Download className="w-4 h-4 text-[#EF6C23]" />
             <span>Download Product Catalogue</span>
           </a>

@@ -93,7 +93,7 @@ export default function Header() {
                       ? "text-white/85 hover:text-[#EF6C23]"
                       : "text-[#2B333B] hover:text-[#EF6C23]"
                   }`}
-                >
+                scroll={true}>
                   <span>{item.label}</span>
                   {isActive && (
                     <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#EF6C23]" />

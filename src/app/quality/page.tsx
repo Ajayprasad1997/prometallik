@@ -84,7 +84,7 @@ export default function QualityPage() {
   ];
 
   return (
-    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111] pt-28">
+    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111]">
       {/* Quality Hero */}
       <section className="relative w-full py-20 bg-[#0B2A4A] text-white overflow-hidden border-b border-[#145B8C]">
         <div className="absolute inset-0 z-0">
@@ -99,16 +99,16 @@ export default function QualityPage() {
           <div className="absolute inset-0 bg-industrial-grid-dark opacity-20 pointer-events-none" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full p_t_35">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#F5B400] mb-4">
+            <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#F5B400] mb-4" data-aos="fade-up">
               <span className="w-6 h-[2px] bg-[#EF6C23]" />
               <span>Laboratory Qualification &amp; Process Control</span>
             </div>
-            <h1 className="text-4xl sm:text-6xl font-heading font-black tracking-tight text-white leading-tight">
+            <h1 className="text-4xl sm:text-6xl font-heading font-black tracking-tight text-white leading-tight" data-aos="fade-up">
               Empirical Quality. Zero Assumptions.
             </h1>
-            <p className="mt-6 text-base sm:text-lg text-[#B8BEC5] leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-[#B8BEC5] leading-relaxed" data-aos="fade-up">
               Every production lot undergoes multi-point analytical screening &mdash; from sub-ppm optical emission spectroscopy to laser diffraction grain verification.
             </p>
           </div>
@@ -122,15 +122,15 @@ export default function QualityPage() {
       <section className="py-24 bg-white border-b border-[#D5DAE0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16 pb-4 border-b border-[#D5DAE0]">
-            <span className="text-xs font-mono-tech uppercase tracking-[0.25em] text-[#EF6C23] font-bold block mb-2">
+            <span className="text-xs font-mono-tech uppercase tracking-[0.25em] text-[#EF6C23] font-bold block mb-2" data-aos="fade-up">
               Traceable Inspection Loop
             </span>
-            <h2 className="text-3xl sm:text-5xl font-heading font-black tracking-tight text-[#0B2A4A]">
+            <h2 className="text-3xl sm:text-5xl font-heading font-black tracking-tight text-[#0B2A4A]" data-aos="fade-right">
               The 6-Checkpoint Analytical Workflow
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
             {testingWorkflow.map((item) => (
               <div
                 key={item.step}
@@ -155,15 +155,15 @@ export default function QualityPage() {
       <section className="py-24 bg-[#EEF0F2] border-b border-[#D5DAE0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-xs font-mono-tech uppercase tracking-wider text-[#EF6C23] font-bold">
+            <span className="text-xs font-mono-tech uppercase tracking-wider text-[#EF6C23] font-bold" data-aos="fade-up">
               Frequently Addressed Questions
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-black text-[#0B2A4A] mt-2">
+            <h2 className="text-3xl sm:text-4xl font-heading font-black text-[#0B2A4A] mt-2" data-aos="fade-up">
               Quality Assurance Inquiries
             </h2>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4" data-aos="fade-up">
             {faqs.map((faq, idx) => {
               const isOpen = openFaq === idx;
               return (

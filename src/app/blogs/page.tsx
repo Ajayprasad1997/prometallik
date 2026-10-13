@@ -34,29 +34,29 @@ export default function BlogsPage() {
   };
 
   return (
-    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111] min-h-screen pt-28 pb-24">
+    <div className="w-full flex flex-col bg-[#EEF0F2] text-[#111111] min-h-screen pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Page Hero */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#0B2A4A] mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-16 p_t_55">
+          <div className="inline-flex items-center space-x-2 text-xs font-mono-tech uppercase tracking-[0.25em] text-[#0B2A4A] mb-3" data-aos="fade-up">
             <span className="w-5 h-[2px] bg-[#EF6C23]" />
             <span>KNOWLEDGE DESK &amp; EDITORIAL</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight text-[#0B2A4A] leading-[1.05]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight text-[#0B2A4A] leading-[1.05]" data-aos="fade-up">
             Industrial Articles &amp; Technical Blogs
           </h1>
-          <p className="mt-4 text-sm sm:text-base text-[#596573] leading-relaxed">
+          <p className="mt-4 text-sm sm:text-base text-[#596573] leading-relaxed" data-aos="fade-up">
             Technical perspectives, refractory research, and powder metallurgy insights from PROMETALLIK.
           </p>
-          <div className="mt-3 inline-block px-3 py-1 bg-[#F5B400]/20 border border-[#F5B400] text-[#0B2A4A] text-xs font-mono-tech rounded">
+          <div className="mt-3 inline-block px-3 py-1 bg-[#F5B400]/20 border border-[#F5B400] text-[#0B2A4A] text-xs font-mono-tech rounded" data-aos="fade-up">
             [Notice: Safe placeholder articles provided pending official client publication approval]
           </div>
         </div>
 
         {/* Featured Story Banner */}
         <div className="mb-16 bg-white rounded-xl overflow-hidden border border-[#D5DAE0] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-7 relative h-[320px] sm:h-[420px] bg-[#0B2A4A]">
+          <div className="lg:col-span-7 relative h-[320px] sm:h-[420px] bg-[#0B2A4A]" data-aos="fade-right">
             <Image
               src={featured.imageUrl}
               alt={featured.imageAlt}
@@ -70,7 +70,7 @@ export default function BlogsPage() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 p-6 sm:p-10 space-y-4">
+          <div className="lg:col-span-5 p-6 sm:p-10 space-y-4" data-aos="fade-left">
             <div className="flex items-center space-x-3 text-xs font-mono-tech text-[#596573]">
               <span className="text-[#0B2A4A] font-bold uppercase">{featured.category}</span>
               <span>&middot;</span>
@@ -93,7 +93,7 @@ export default function BlogsPage() {
         </div>
 
         {/* Search & Category Filter Controls */}
-        <div className="bg-white p-6 rounded-xl border border-[#D5DAE0] shadow-xs mb-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-white p-6 rounded-xl border border-[#D5DAE0] shadow-xs mb-12 flex flex-col md:flex-row items-center justify-between gap-6" data-aos="fade-up">
           {/* Search Input */}
           <div className="relative w-full md:w-80">
             <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#596573]" />
@@ -125,7 +125,7 @@ export default function BlogsPage() {
         </div>
 
         {/* Responsive Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" data-aos="fade-up">
           {filteredArticles.slice(0, visibleCount).map((article) => (
             <div
               key={article.id}
@@ -181,7 +181,7 @@ export default function BlogsPage() {
         )}
 
         {/* Newsletter & Technical Inquiries Section */}
-        <div className="bg-[#0B2A4A] text-white rounded-xl p-8 sm:p-12 border border-[#145B8C] shadow-xl text-center max-w-3xl mx-auto">
+        <div className="bg-[#0B2A4A] text-white rounded-xl p-8 sm:p-12 border border-[#145B8C] shadow-xl text-center max-w-3xl mx-auto" data-aos="flip-left">
           <Mail className="w-8 h-8 text-[#EF6C23] mx-auto mb-3" />
           <h3 className="text-2xl sm:text-3xl font-heading font-black text-white">
             Receive Technical Metallurgical Updates
