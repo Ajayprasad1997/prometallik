@@ -14,12 +14,12 @@ export interface OfficeDetails {
 export const contactData = {
   corporateOffice: {
     name: "PROMETALLIK Head Office",
-    streetAddress: "Park Street Commercial Center, Central Business District",
+    streetAddress: "Village - Gopali, PO - Salua, PS - Kharagpur, Near IIT-Kharagpur Tea Garden",
     city: "Kolkata",
     state: "West Bengal",
-    pinCode: "700016",
+    pinCode: "721145",
     country: "India",
-    telephone: "+91 (033) 2289-4000",
+    telephone: "+91 7439 777 074",
     email: "info@prometallik.com",
     salesEmail: "sales@prometallik.com",
     businessHours: "Monday – Friday: 09:00 – 18:00 IST",

@@ -121,7 +121,7 @@ export default function Preloader() {
             onClick={handleSkip}
             className="mt-8 text-[11px] font-mono-tech uppercase tracking-widest text-[#B8BEC5] hover:text-[#EF6C23] transition-colors py-1 px-3 border border-transparent hover:border-[#EF6C23]/40 rounded cursor-pointer"
           >
-            [ Skip Animation &rarr; ]
+            {/* [ Skip Animation &rarr; ] */}
           </button>
         </div>
       </div>

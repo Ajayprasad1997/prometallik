@@ -256,11 +256,11 @@ export default function Footer() {
               <div className="pt-4 border-t border-[#145B8C]/60 grid grid-cols-2 gap-3 text-[11px] font-mono-tech">
                 <div className="bg-[#0B2A4A] p-2.5 rounded border border-[#145B8C]/50">
                   <span className="text-[#8E98A4] block text-[9px] uppercase">Corporate HQ</span>
-                  <span className="text-white font-bold">Kolkata, West Bengal</span>
+                  <span className="text-white font-bold">Kharagpur, Near IIT-Kharagpur Tea Garden</span>
                 </div>
                 <div className="bg-[#0B2A4A] p-2.5 rounded border border-[#145B8C]/50">
                   <span className="text-[#8E98A4] block text-[9px] uppercase">Plant Operations</span>
-                  <span className="text-[#F5B400] font-bold">Kolkata / Haldia Gateway</span>
+                  <span className="text-[#F5B400] font-bold">Kolkata / Kharagpur</span>
                 </div>
               </div>
             </div>

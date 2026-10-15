@@ -65,7 +65,7 @@ export default function AboutPage() {
       </section>
 
       {/* Corporate Overview & Featured Client Image */}
-      <section className="py-24 bg-[#FFFFFF] text-[#111111] border-b border-[#D5DAE0]">
+      <section className="py-24 bg-[#FFFFFF] text-[#111111] border-b border-[#D5DAE0] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
@@ -124,7 +124,7 @@ export default function AboutPage() {
             </div>
 
             {/* Right Column: Prominent User-Provided Featured Image */}
-            <div className="lg:col-span-5 relative" data-aos="fade-left">
+            <div className="lg:col-span-5 relative overflow-hidden" data-aos="fade-left">
               <div className="relative w-full h-[450px] sm:h-[520px] rounded-xl overflow-hidden bg-[#0B2A4A] shadow-xl border border-[#D5DAE0]">
                 <Image
                   src={siteContent.about.featuredClientImage.src}

@@ -27,7 +27,7 @@ export default function ProductFlipCard({ product, priority = false }: ProductFl
 
   return (
     <div
-      className="perspective-1000 w-full h-[470px] cursor-pointer group select-none"
+      className="perspective-1000 w-full h-[470px] cursor-pointer group select-none overflow-hidden"
       onClick={handleCardClick}
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}

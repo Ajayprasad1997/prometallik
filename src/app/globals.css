@@ -166,3 +166,19 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .p_t_55{
   padding-top: 120px;
 }
+
+/* responsive css */
+
+@media(max-width:1700px){
+  .logoF{
+    font-size: 16px;
+  }
+  .logoS{letter-spacing: 0px;
+  font-size: 7px;
+}
+header div button.text-base, header div a.text-base {
+	font-size: 14px;
+	letter-spacing: 0px;
+	margin-right: 12px;
+}
+}

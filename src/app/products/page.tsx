@@ -45,7 +45,7 @@ export default function ProductsPage() {
       <ProductExplorerSection />
 
       {/* Technical Download & Standards Strip */}
-      <section className="py-16 bg-white border-b border-[#D5DAE0]">
+      <section className="py-16 bg-white border-b border-[#D5DAE0] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-heading font-black text-[#0B2A4A]" data-aos="fade-right">

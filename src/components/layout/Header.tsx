@@ -57,7 +57,7 @@ export default function Header() {
             <div className="flex flex-col">
               <div className="flex items-center">
                 <span
-                  className={`font-heading text-xl tracking-tight font-extrabold transition-colors ${
+                  className={`font-heading text-xl tracking-tight font-extrabold logoF transition-colors ${
                     isTransparent ? "text-white" : "text-[#0B2A4A]"
                   }`}
                 >
@@ -66,7 +66,7 @@ export default function Header() {
                 <span className="text-[#EF6C23] font-black text-xl">.</span>
               </div>
               <span
-                className={`text-[8.5px] font-mono-tech tracking-[0.22em] uppercase transition-colors ${
+                className={`text-[8.5px] font-mono-tech tracking-[0.22em] logoS uppercase transition-colors ${
                   isTransparent ? "text-[#B8BEC5]" : "text-[#145B8C]"
                 }`}
               >
@@ -76,7 +76,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-5 xl:space-x-7" aria-label="Main Navigation">
+          <nav className="hidden min-[1301px]:flex items-center space-x-5 min-[1450px]:space-x-7" aria-label="Main Navigation">
             {siteContent.navigation.map((item) => {
               const isActive = pathname === item.href;
 
@@ -104,7 +104,7 @@ export default function Header() {
           </nav>
 
           {/* Permanent Header Actions */}
-          <div className="hidden lg:flex items-center space-x-3">
+          <div className="hidden min-[1301px]:flex items-center space-x-3">
             {/* Download Catalogue Secondary Action */}
             <a
               href="#technical-resources"
@@ -138,7 +138,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex lg:hidden items-center space-x-2">
+          <div className="flex min-[1301px]:hidden items-center space-x-2">
             <button
               onClick={() => openRfqModal()}
               className="bg-[#EF6C23] text-white text-[11px] font-heading font-bold uppercase tracking-wider px-2.5 py-1.5 rounded"
@@ -163,7 +163,7 @@ export default function Header() {
       {/* Accessible Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm lg:hidden pt-20"
+          className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm min-[1301px]:hidden pt-20"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div
